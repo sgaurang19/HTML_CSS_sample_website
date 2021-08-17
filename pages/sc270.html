@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header_flexbox{
+              background-color: #A3F12B;
+            justify-content: left;
+            display: flex;
+            flex-flow: row wrap;
+            height: 200px;
+        }
+      
+        /* .header_flexbox p{
+            font-size: 60px;   
+        } */
+        .header_flexbox #header {
+            text-transform: uppercase;
+        }
+        
+
+        .middle_flexbox{
+            display: flex;
+            flex-flow: row;       
+            height: 300px;     
+        }
+        .mid_sidebar{
+            background-color: #f8f8f8;
+            order: 2;
+            flex: 1;
+        }
+        .left_sidebar{
+            background-color: #fff;
+            order: 1;
+            flex: 3; 
+        }
+        .right_sidebar{
+            background-color: #F8FFFF;
+            order: 3;
+            flex: 1;
+        }
+        .sidebar_text{
+            font-size: 14px;
+            font-weight: bold;
+            text-align: left;
+            text-transform: capitalize;
+        }
+        .footer_flexbox{
+            background-color: #A3F12B;
+            justify-content: left;
+            display: flex;
+            flex-flow: row wrap;
+            height: 200px;
+        }
+        .footer_class{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        /*p{
+            line-height: 1.3;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="main_content">
+    <header class = "header_flexbox">
+        <p class = "header_class"><span id="header" class="sidebar_text">Header</span>
+
+       </p>
+    </header>
+    <div class="middle_flexbox">
+        <div class = "left_sidebar">
+            <p class="sidebar_text">Article</p>
+        </div>
+        <div class="mid_sidebar">
+           <p class ="sidebar_text"> Aside</p>
+        </div>
+        <div class = "right_sidebar">
+            <p class="sidebar_text">Nav</p>
+        </div>
+    </div>
+    <footer class = "footer_flexbox">
+        <p class = "footer_class"><span id="footer">Footer</span></p>
+    </footer>
+</div>
+    
+</body>
+</html>
